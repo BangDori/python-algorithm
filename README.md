@@ -12,3 +12,5 @@
 - 19532 : [수학은 비대면강의입니다](https://www.acmicpc.net/problem/19532)
 - 1018 : [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
 - 1436 : [영화감독 숌](https://www.acmicpc.net/problem/1436)
+- 11650 : [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
+- 18870 : [좌표 압축](https://www.acmicpc.net/problem/18870)
