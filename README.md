@@ -14,3 +14,5 @@
 - 1436 : [영화감독 숌](https://www.acmicpc.net/problem/1436)
 - 11650 : [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
 - 18870 : [좌표 압축](https://www.acmicpc.net/problem/18870)
+- 1934 : [최소 공배수](https://www.acmicpc.net/problem/1934)
+-
