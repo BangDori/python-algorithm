@@ -15,4 +15,5 @@
 - 11650 : [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
 - 18870 : [좌표 압축](https://www.acmicpc.net/problem/18870)
 - 1934 : [최소 공배수](https://www.acmicpc.net/problem/1934)
--
+- 2485 : [가로수](https://www.acmicpc.net/problem/2485)
+- 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
