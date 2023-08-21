@@ -17,3 +17,4 @@
 - 1934 : [최소 공배수](https://www.acmicpc.net/problem/1934)
 - 2485 : [가로수](https://www.acmicpc.net/problem/2485)
 - 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
+- 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
