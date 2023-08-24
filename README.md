@@ -18,3 +18,7 @@
 - 2485 : [가로수](https://www.acmicpc.net/problem/2485)
 - 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
 - 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
+- 1676 : [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)
+- 18110 : [solved.ac](https://www.acmicpc.net/problem/18110) 파이썬 사사오입
+- 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
+- 1654 : [랜선 자르기] (https://www.acmicpc.net/problem/1654)
