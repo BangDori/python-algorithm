@@ -1,12 +1,12 @@
 # Python
 
-### CodeUp
+### CodeUp 🚗
 
 - 6082 : [3 6 9 게임의 왕이 되자](https://codeup.kr/problem.php?id=6082)
 - 6095 : [바둑판에 흰 돌 놓기](https://codeup.kr/problem.php?id=6095)
 - 6096 : [바둑알 십자 뒤집기](https://codeup.kr/problem.php?id=6096)
 
-### BaekJoon
+### BaekJoon Step up ✈️
 
 - 10818 : [최소, 최대](https://www.acmicpc.net/problem/10818)
 - 19532 : [수학은 비대면강의입니다](https://www.acmicpc.net/problem/19532)
@@ -18,7 +18,10 @@
 - 2485 : [가로수](https://www.acmicpc.net/problem/2485)
 - 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
 - 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
+
+
+### BaekJoon Level up Class 🚀
 - 1676 : [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)
-- 18110 : [solved.ac](https://www.acmicpc.net/problem/18110) 파이썬 사사오입
+- 18110 : [solved.ac](https://www.acmicpc.net/problem/18110)
 - 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
-- 1654 : [랜선 자르기] (https://www.acmicpc.net/problem/1654)
+- 1654 : [랜선 자르기](https://www.acmicpc.net/problem/1654)
