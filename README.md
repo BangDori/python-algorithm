@@ -18,9 +18,10 @@
 - 2485 : [가로수](https://www.acmicpc.net/problem/2485)
 - 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
 - 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
-
+- 4779 : [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
 
 ### BaekJoon Level up Class 🚀
+
 - 1676 : [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)
 - 18110 : [solved.ac](https://www.acmicpc.net/problem/18110)
 - 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
