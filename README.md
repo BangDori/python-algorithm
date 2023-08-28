@@ -11,6 +11,7 @@
 - 4779 : [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
 - 1654 : [랜선 자르기](https://www.acmicpc.net/problem/1654)
 - 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
+- 9663: [N-Queen](https://www.acmicpc.net/problem/9663)
 
 ### 해결 🔚 ✅ 🚀
 
