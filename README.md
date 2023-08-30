@@ -6,6 +6,8 @@
 
 - 2485 : [가로수](https://www.acmicpc.net/problem/2485)
 - 4948 : [베르트랑 공준](https://www.acmicpc.net/problem/4948)
+- 1654 : [랜선 자르기](https://www.acmicpc.net/problem/1654)
+- 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
 
 #### Programmers
 
@@ -19,8 +21,6 @@
 
 - 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
 - 4779 : [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
-- 1654 : [랜선 자르기](https://www.acmicpc.net/problem/1654)
-- 18111 : [마인크래프트](https://www.acmicpc.net/problem/18111)
 - 9663: [N-Queen](https://www.acmicpc.net/problem/9663)
 
 #### Programmers
