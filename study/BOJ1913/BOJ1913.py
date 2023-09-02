@@ -49,28 +49,18 @@ while True:
         snail[row+i*dir][col] = num
         num -= 1
     
-    # col 방향으로 + dir 만큼 이동되게 한 후, 바로 시작할 수 있게
     col += dir
-
-    # 이동거리 -1
     dist -= 1
-    # 마지막 row 위치 지정
     row += dist * dir
 
-    # 마지막은 y+1 방향 이동 후 종료
     if num == 0:
         break
 
-    # col 이동
     for i in range(dist):
         snail[row][col+i*dir] = num
         num -= 1
-    # 마지막 col 위치 지정
-    col += i * dir
-
-    # 방향 변환
+    col += (dist - 1) * dir
     dir *= -1
-    # row 방향으로 + dir(1, -1) 만큼 이동되게 한 후, 바로 시작할 수 있게
     row += dir
 
 for i in range(N):
