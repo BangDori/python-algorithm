@@ -4,7 +4,8 @@
 
 #### BaekJoon
 
-- 1654 : [랜선 자르기](https://www.acmicpc.net/problem/1654)
+- 1654: [랜선 자르기](https://www.acmicpc.net/problem/1654)
+- 2580: [스도쿠](https://www.acmicpc.net/problem/2580)
 
 #### Programmers
 
@@ -17,8 +18,8 @@
 
 #### BaekJoon
 
-- 2346 : [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
-- 4779 : [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
+- 2346: [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)
+- 4779: [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
 - 9663: [N-Queen](https://www.acmicpc.net/problem/9663)
 
 #### Programmers
