@@ -6,6 +6,7 @@
 
 - 1654: [랜선 자르기](https://www.acmicpc.net/problem/1654)
 - 2580: [스도쿠](https://www.acmicpc.net/problem/2580)
+- 2559: [수열](https://www.acmicpc.net/problem/2559)
 
 #### Programmers
 
