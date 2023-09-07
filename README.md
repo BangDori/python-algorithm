@@ -7,6 +7,8 @@
 - 1654: [랜선 자르기](https://www.acmicpc.net/problem/1654)
 - 2580: [스도쿠](https://www.acmicpc.net/problem/2580)
 - 2559: [수열](https://www.acmicpc.net/problem/2559)
+- 9184: [신나는 함수 실행](https://www.acmicpc.net/problem/9184)
+- 1904: [01타일] (https://www.acmicpc.net/problem/1904)
 
 #### Programmers
 
