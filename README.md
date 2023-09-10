@@ -4,12 +4,6 @@
 
 #### BaekJoon
 
-- 1654: [랜선 자르기](https://www.acmicpc.net/problem/1654)
-- 2580: [스도쿠](https://www.acmicpc.net/problem/2580)
-- 2559: [수열](https://www.acmicpc.net/problem/2559)
-- 9184: [신나는 함수 실행](https://www.acmicpc.net/problem/9184)
-- 1904: [01타일] (https://www.acmicpc.net/problem/1904)
-
 #### Programmers
 
 - Level 3. 베스트 앨범 (해시)
@@ -46,5 +40,10 @@
     <li>2485: 가로수</li>
     <li>4948: 베르트랑 공준</li>
     <li>18111: 마인크래프트</li>
+    <li>1654: 랜선 자르기</li>
+    <li>2580: 스도쿠</li>
+    <li>2559: 수열</li>
+    <li>9184: 신나는 함수 실행</li>
+    <li>1904: 01타일</li>
   </ul>
 </details>
