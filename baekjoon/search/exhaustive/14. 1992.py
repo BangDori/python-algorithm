@@ -1,27 +1,33 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
-video = [list(map(int, input().rstrip())) for _ in range(n)]
+N = int(input())
+video = [list(map(int, input().rstrip())) for _ in range(N)]
 
-def dfs(x, y, n):
-    check = video[x][y]
+answer = ""
 
-    for i in range(x, x+n):
-        for j in range(y, y+n):
-            if check != video[i][j]:
-                check = -1
+def dfs(row, col, size):
+    global answer
+    num = video[row][col]
+    isSame = True
+
+    for r in range(row, row+size):
+        for c in range(col, col+size):
+            if num != video[r][c]:
+                isSame = False
                 break
     
-    if check == -1:
-        n //= 2
-        print('(', end='')
-        dfs(x, y, n)
-        dfs(x, y+n, n)
-        dfs(x+n, y, n)
-        dfs(x+n, y+n, n)
-        print(')', end='')
-    else:
-        print(check, end='')
+    if isSame or size == 1:
+        answer += str(num)
+        return
+    
+    size //= 2
+    answer += '('
+    dfs(row, col, size)
+    dfs(row, col+size, size)
+    dfs(row+size, col, size)
+    dfs(row+size, col+size, size)
+    answer += ')'
 
-dfs(0, 0, n)
+dfs(0, 0, N)
+print(answer)
