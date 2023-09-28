@@ -1,9 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-board = []
-for i in range(19):
-    board.append(list(map(int, input().split())))
+board = [list(map(int, input().split())) for _ in range(19)]
 
 # → ↓ ↘ ↗
 dx = [0, 1, 1, -1]
@@ -23,12 +21,11 @@ for x in range(19):
                     cnt += 1
 
                     if cnt == 5:
-                        # 육목 체크
                         if 0 <= x - dx[i] < 19 and 0 <= y - dy[i] < 19 and board[x - dx[i]][y - dy[i]] == focus:
                             break
                         if 0 <= nx + dx[i] < 19 and 0 <= ny + dy[i] < 19 and board[nx + dx[i]][ny + dy[i]] == focus:
                             break
-                        # 육목이 아니면 성공한거니까 종료
+
                         print(focus)
                         print(x + 1, y + 1)
                         sys.exit(0)
