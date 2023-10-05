@@ -20,20 +20,20 @@ def get_Z(size, row, col):
         print(answer)
         return
 
-    if ans_row < row+pow(2, size-1) and ans_col < col+pow(2, size-1):
+    if ans_row < row + 2**(size-1) and ans_col < col + 2**(size-1):
         # 1
         get_Z(size-1, row, col)
     elif ans_row < row+pow(2, size-1):
         # 2
-        count += (pow(2, size-1) * pow(2, size-1))
-        get_Z(size-1, row, col+pow(2, size-1))
+        count += (2**(size-1) * 2**(size-1))
+        get_Z(size-1, row, col + 2**(size-1))
     elif ans_col < col+pow(2, size-1):
         # 3
-        count += (pow(2, size-1) * pow(2, size-1) * 2)
-        get_Z(size-1, row+pow(2, size-1), col)
+        count += (2**(size-1) * 2**(size-1) * 2)
+        get_Z(size-1, row + 2**(size-1), col)
     else:
         # 4
-        count += (pow(2, size-1) * pow(2, size-1) * 3)
-        get_Z(size-1, row+pow(2, size-1), col+pow(2, size-1))
+        count += (2**(size-1) * 2**(size-1) * 3)
+        get_Z(size-1, row + 2**(size-1), col + 2**(size-1))
 
 get_Z(size, 0, 0)
