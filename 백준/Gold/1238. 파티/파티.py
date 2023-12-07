@@ -4,39 +4,37 @@ input = sys.stdin.readline
 
 INF = float('inf')
 
-people, load_count, X = map(int, input().split())
-load = [[] for _ in range(people+1)]
-heap = []
+people, load_count, x = map(int, input().split())
 
+load = [[] for _ in range(people+1)]
 for _ in range(load_count):
     src, dst, time = map(int, input().split())
     load[src].append((time, dst))
 
-end = [INF for _ in range(people+1)]
 
-def dijkstra(start, array):
-    # 현재 위치와 이동 거리
-    array[start] = 0
-    heapq.heappush(heap, (0, start))
+heap = []
+def dijkstra(i, array):
+    array[i] = 0
+    heap.append((0, i))
 
     while heap:
-        tot_time, now = heapq.heappop(heap)
+        time, src = heapq.heappop(heap)
 
-        if array[now] < tot_time:
+        if array[src] < time:
             continue
 
-        for time, dst in load[now]:
-            next_time = tot_time + time
+        for next_time, next in load[src]:
+            if time + next_time < array[next]:
+                array[next] = time + next_time
+                heapq.heappush(heap, (array[next], next))
 
-            if array[dst] > next_time:
-                array[dst] = next_time
-                heapq.heappush(heap, (next_time, dst))
-
-dijkstra(X, end)
+back = [INF for _ in range(people+1)]
+dijkstra(x, back)
 
 answer = 0
-for i in range(1, len(end)):
-    start = [INF for _ in range(people+1)]
-    dijkstra(i, start)
-    answer = max(answer, start[X]+end[i])
+for i in range(1, people+1):
+    go = [INF for _ in range(people+1)]
+    dijkstra(i, go)
+    answer = max(answer, go[x] + back[i])
+
 print(answer)
