@@ -13,28 +13,37 @@ for _ in range(bus_count):
     conn[src].append((cost, dst))
 
 start, end = map(int, input().split())
+nodes = [-1 for _ in range(country_count+1)]
 
 def dijkstra(start, end):
-    heap = [(0, start, str(start))]
-    costs[start] = (0, str(start))
+    heap = [(0, start)]
+    costs[start] = 0
 
     while heap:
-        cost, src, move = heapq.heappop(heap)
+        cost, src= heapq.heappop(heap)
 
         if src == end:  
             return
 
-        if costs[src][0] < cost:
+        if costs[src] < cost:
             continue
 
         for next_cost, dst in conn[src]:
-            if costs[dst][0] > cost + next_cost:
-                costs[dst] = (cost+next_cost, move+" "+str(dst))
-                heapq.heappush(heap, (costs[dst][0], dst, move+" "+str(dst)))
+            if costs[dst] > cost + next_cost:
+                costs[dst] = cost+next_cost
+                nodes[dst] = src
+                heapq.heappush(heap, (costs[dst], dst))
 
-costs = [(float('inf'), "") for _ in range(country_count+1)]
+costs = [float('inf') for _ in range(country_count+1)]
 dijkstra(start, end)
 
-answer_cost, answer_path = costs[end]
-answer_path = answer_path.split()
-print(answer_cost, len(answer_path), " ".join(answer_path), sep='\n')
+answer_cost = costs[end]
+answer_path = []
+while nodes[end] != -1:
+    answer_path.append(end)
+    end = nodes[end]
+answer_path.append(start)
+
+print(answer_cost, len(answer_path), sep='\n')
+for _ in range(len(answer_path)):
+    print(answer_path.pop(), end=' ')
