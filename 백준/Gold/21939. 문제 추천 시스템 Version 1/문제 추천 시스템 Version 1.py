@@ -1,4 +1,4 @@
-import heapq
+from heapq import heappush, heappop
 import sys
 input = sys.stdin.readline
 
@@ -6,52 +6,55 @@ RECOMMEND = 'recommend'
 ADD = 'add'
 SOLVED = 'solved'
 
-# 문제의 수
-N = int(input())
+problem_cnt = int(input())
 min_heap = []
 max_heap = []
-in_problems = {}
+problems = {}
 
-def add_problem(pid, level):
-    heapq.heappush(min_heap, [level, pid])
-    heapq.heappush(max_heap, [-level, -pid])
+def add_problem(pid, plevel):
+    heappush(min_heap, (plevel, pid))
+    heappush(max_heap, (-plevel, -pid))
 
-    in_problems[pid] = True
+    problems[pid] = True
 
-def cleanup_maxheap():
-    while not in_problems[-max_heap[0][1]]:
-        heapq.heappop(max_heap)
+def cleanup_max_heap():
+    while not problems[-max_heap[0][1]]:
+        heappop(max_heap)
 
-def cleanup_minheap():
-    while not in_problems[min_heap[0][1]]:
-        heapq.heappop(min_heap)
+def cleanup_min_heap():
+    while not problems[min_heap[0][1]]:
+        heappop(min_heap)
 
-for _ in range(N):
-    pid, level = map(int, input().split())
-    add_problem(pid, level)
+def solve_problem(pid):
+    problems[pid] = False
 
-# 명령문의 수
-M = int(input())
-answer = []
-for _  in range(M):
-    command = input().rstrip().split()
+for _ in range(problem_cnt):
+    pid, plevel = map(int, input().split())
+    add_problem(pid, plevel)
+
+command_cnt = int(input())
+recommend_problems = []
+for _ in range(command_cnt):
+    command = input().strip().split()
 
     if command[0] == RECOMMEND:
         if command[1] == '1':
-            cleanup_maxheap()
-            answer.append(-max_heap[0][1])
+            cleanup_max_heap()
+            recommend_problems.append(-max_heap[0][1])
         else:
-            cleanup_minheap()
-            answer.append(min_heap[0][1])
+            cleanup_min_heap()
+            recommend_problems.append(min_heap[0][1])    
 
-    elif command[0] == SOLVED:
-        in_problems[int(command[1])] = False
+    elif command[0] == ADD:
+        pid, plevel = int(command[1]), int(command[2])
+        add_problem(pid, plevel)
 
     else:
-        pid, level = int(command[1]), int(command[2])
+        pid = int(command[1])
+        solve_problem(pid)
 
-        cleanup_maxheap(); cleanup_minheap()
-        add_problem(pid, level)
+    cleanup_max_heap()
+    cleanup_min_heap()
 
-for ans in answer:
-    print(ans)
+for answer in recommend_problems:
+    print(answer)
